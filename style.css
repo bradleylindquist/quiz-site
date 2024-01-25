@@ -299,6 +299,22 @@ body {
   border-color: rgba(255, 255, 255, .1);
 }
 
+.option-list .option.correct {
+  background: black;
+  color: green;
+  border-color: green;
+}
+
+.option-list .option.incorrect {
+  background: black;
+  color: red;
+  border-color: red;
+}
+
+.option-list .option.disabled {
+  pointer-events: none;
+}
+
 .quiz-box .quiz-footer {
   display: flex;
   justify-content: space-between;
