@@ -211,8 +211,8 @@ body {
 
 .quiz-section {
   position: relative;
-  /* left: -50%; */
-  left: 0;
+  left: -50%;
+  /* left: 0; */
   width: 100%;
   background: navy;
   display: flex;
@@ -237,6 +237,17 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(.9);
+}
+
+.quiz-section .quiz-box.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+  transition: 1s ease;
+  transition-delay: 1s;
 }
 
 .quiz-box h1 {
@@ -305,15 +316,15 @@ body {
 .quiz-footer .next-btn {
   width: 100px;
   height: 45px;
-  background: rgba(255, 255, 255, .1);
+  background: linear-gradient(45deg, hotpink, transparent, hotpink);
   border: 2px solid rgba(255, 255, 255, .1);
   outline: none;
   border-radius: 6px;
   font-size: 16px;
-  color: rgba(255, 255, 255, .1);
+  color: white;
   font-weight: 600;
   cursor: pointer;
-  pointer-events: none;
+  /* pointer-events: none; */
   transition: .5s;
 }
 
